@@ -1,5 +1,9 @@
+const sketchWidth = 400;
+const sketchHeight = 400;
+
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(sketchWidth, sketchHeight, SVG);
 }
 
 function draw() {
@@ -24,7 +28,7 @@ function draw() {
     triangle(255,65,313,55,308,75);
     triangle(270,85,315,115,325,100);
     triangle(260,97,300,158,325,150);
-
-
+    noLoop();
+    save();
 }
 
