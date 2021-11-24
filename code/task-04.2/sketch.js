@@ -18,4 +18,6 @@ function draw() {
       circleSize
     );
   }
+  noLoop();
+  save();
 }
