@@ -41,16 +41,14 @@ const colorObject = colorize(
 const cylinderShape = cylinder({
   center: [0, 2, 6],
   height: 50,
-  radius: 2,
-  segments: 50
+  radius: 1,
+  segments: 100
 });
 
 const unionShape = subtract([extrudeShape,cylinderShape]);
 
-return extrudeShape;
-return cylinderShape;
-return colorObject;
-return unionShape;
+return [extrudeShape,cylinderShape,colorObject,unionShape];
 };
+
 
 module.exports = { main };
